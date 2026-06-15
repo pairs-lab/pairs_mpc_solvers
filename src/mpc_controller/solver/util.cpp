@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-namespace pairs_mpc_solvers
+namespace mrs_mpc_solvers
 {
 
 namespace mpc_controller
@@ -114,4 +114,4 @@ void QPSolver::reset_rand_controller(void) {
 
 }  // namespace mpc_controller
 
-}  // namespace pairs_mpc_solvers
+}  // namespace mrs_mpc_solvers

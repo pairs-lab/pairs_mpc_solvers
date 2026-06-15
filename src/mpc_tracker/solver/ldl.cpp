@@ -1,6 +1,6 @@
 #include <pairs_mpc_solvers/mpc_tracker/solver.h>
 
-namespace pairs_mpc_solvers
+namespace mrs_mpc_solvers
 {
 
 namespace mpc_tracker
@@ -21278,4 +21278,4 @@ void QPSolver::fill_KKT(void) {
 
 }  // namespace mpc_tracker
 
-}  // namespace pairs_mpc_solvers
+}  // namespace mrs_mpc_solvers

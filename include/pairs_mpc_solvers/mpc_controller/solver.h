@@ -16,7 +16,7 @@
 #define EPS 1.2e-7
 #define RNMX (1.0 - EPS)
 
-namespace pairs_mpc_solvers
+namespace mrs_mpc_solvers
 {
 
 namespace mpc_controller
@@ -379,6 +379,6 @@ public:
 
 }  // namespace mpc_controller
 
-}  // namespace pairs_mpc_solvers
+}  // namespace mrs_mpc_solvers
 
 #endif

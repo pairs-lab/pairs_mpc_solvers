@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-namespace pairs_mpc_solvers
+namespace mrs_mpc_solvers
 {
 
 namespace mpc_tracker
@@ -113,4 +113,4 @@ void QPSolver::reset_rand(void) {
 
 }  // namespace mpc_tracker
 
-}  // namespace pairs_mpc_solvers
+}  // namespace mrs_mpc_solvers
