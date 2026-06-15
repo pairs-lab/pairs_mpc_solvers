@@ -4,7 +4,7 @@
 
 using namespace Eigen;
 
-namespace mrs_mpc_solvers
+namespace pairs_mpc_solvers
 {
 
 namespace mpc_controller
@@ -190,4 +190,4 @@ double Solver::getFirstControlInput() {
 
 }  // namespace mpc_controller
 
-}  // namespace mrs_mpc_solvers
+}  // namespace pairs_mpc_solvers

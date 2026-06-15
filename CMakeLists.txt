@@ -19,8 +19,8 @@ endforeach()
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
 
 set(LIBRARIES
-  MrsMpcSolvers_MpcTrackerSolver
-  MrsMpcSolvers_MpcControllerSolver
+  PairsMpcSolvers_MpcTrackerSolver
+  PairsMpcSolvers_MpcControllerSolver
   )
 
 ## --------------------------------------------------------------
@@ -29,7 +29,7 @@ set(LIBRARIES
 
 # MPC Tracker
 
-add_library(MrsMpcSolvers_MpcTrackerSolver SHARED
+add_library(PairsMpcSolvers_MpcTrackerSolver SHARED
   src/mpc_tracker/mpc_tracker_solver.cpp
   src/mpc_tracker/solver/ldl.cpp
   src/mpc_tracker/solver/matrix_support.cpp
@@ -37,13 +37,13 @@ add_library(MrsMpcSolvers_MpcTrackerSolver SHARED
   src/mpc_tracker/solver/util.cpp
   )
 
-target_include_directories(MrsMpcSolvers_MpcTrackerSolver
+target_include_directories(PairsMpcSolvers_MpcTrackerSolver
   PUBLIC
     $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
 )
 
-target_link_libraries(MrsMpcSolvers_MpcTrackerSolver
+target_link_libraries(PairsMpcSolvers_MpcTrackerSolver
   PRIVATE
     rclcpp::rclcpp
     Eigen3::Eigen
@@ -51,7 +51,7 @@ target_link_libraries(MrsMpcSolvers_MpcTrackerSolver
 
 # MPC Controller
 
-add_library(MrsMpcSolvers_MpcControllerSolver SHARED
+add_library(PairsMpcSolvers_MpcControllerSolver SHARED
   src/mpc_controller/mpc_controller_solver.cpp
   src/mpc_controller/solver/ldl.cpp
   src/mpc_controller/solver/matrix_support.cpp
@@ -59,13 +59,13 @@ add_library(MrsMpcSolvers_MpcControllerSolver SHARED
   src/mpc_controller/solver/util.cpp
   )
 
-target_include_directories(MrsMpcSolvers_MpcControllerSolver
+target_include_directories(PairsMpcSolvers_MpcControllerSolver
   PUBLIC
     $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
 )
 
-target_link_libraries(MrsMpcSolvers_MpcControllerSolver
+target_link_libraries(PairsMpcSolvers_MpcControllerSolver
   PRIVATE
     rclcpp::rclcpp
     Eigen3::Eigen

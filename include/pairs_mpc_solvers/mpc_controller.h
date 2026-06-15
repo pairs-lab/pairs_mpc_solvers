@@ -4,7 +4,7 @@
 #include <pairs_mpc_solvers/mpc_controller/solver.h>
 #include <Eigen/Core>
 
-namespace mrs_mpc_solvers
+namespace pairs_mpc_solvers
 {
 
 namespace mpc_controller
@@ -47,6 +47,6 @@ private:
 
 }  // namespace mpc_controller
 
-}  // namespace mrs_mpc_solvers
+}  // namespace pairs_mpc_solvers
 
 #endif
