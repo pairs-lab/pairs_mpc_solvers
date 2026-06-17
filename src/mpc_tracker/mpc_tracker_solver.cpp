@@ -2,7 +2,7 @@
 
 using namespace Eigen;
 
-namespace mrs_mpc_solvers
+namespace pairs_mpc_solvers
 {
 
 namespace mpc_tracker
@@ -244,4 +244,4 @@ void Solver::setDt(const double& new_dt) {
 
 }  // namespace mpc_tracker
 
-}  // namespace mrs_mpc_solvers
+}  // namespace pairs_mpc_solvers

@@ -1,6 +1,6 @@
 #include <pairs_mpc_solvers/mpc_controller/solver.h>
 
-namespace mrs_mpc_solvers {
+namespace pairs_mpc_solvers {
 
 namespace mpc_controller {
 
